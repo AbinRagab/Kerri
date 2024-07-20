@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+:root{
+    --main-color:#e65f78;
+    --sec-color:rgba(255, 255, 255, 0.75) !important;
+    --main-dark:#e43757;
+}
+
+.sec-color{
+    color: var(--sec-color);
+}
+
+section{
+    padding: 80px 0;
+}
+
+.main-color{
+    color: var(--main-color);
+}
+
+
+
+
+
+/* nav */
+.navbar-nav .nav-link{
+    transition: 0.5s all;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+}
+
+/* nav */
+
+
+
+/*  home  */
+#home{
+    background-image: url(../images/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+ #home .download{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: transparent;
+    transition: 0.5s color , 0.5s background-color;
+}
+#home .download:hover{
+    color: #000;
+    background-color: #fff;
+} 
+
+
+
+
+
+@keyframes bounce {
+
+    0%{
+        bottom: 20px;
+
+    }
+    50%{
+        bottom: 40px;
+
+    }
+    100%{
+        bottom: 20px;
+    }
+    
+}
+.settings{
+    position: fixed;
+    top:30%;
+    left:0px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.icon-up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color:#000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*  home  */
+
+
+
+
+/*  about */
+.social-icons .icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid grey; 
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.social-icons .icon:hover {
+    border: 2px solid var(--main-color); 
+}
+
+.social-icons .icon i {
+    transition: 0.5s all;
+
+}
+
+.social-icons .icon:hover i {
+    color: var(--main-color);
+}
+
+/*  about */
+
+
+
+
+
+/*  services  */
+#services .item{
+    border: 1px solid rgb(179, 173, 173);
+    border-radius: 10px;
+   
+}
+
+#services .item:hover h2::after{
+    width: 60px;
+
+}
+#services .item i {
+    font-size: 3.5rem;
+    color:var(--main-color);
+}
+
+#services .item h2::after{
+    content: "";
+    position: absolute;
+     bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: var(--main-color);
+    height: 3px;
+    width: 30px;
+    transition: 0.5s all;
+}
+.hire{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 0;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+
+/*  services */
+
+
+
+
+
+/*  client */
+#client .client-area i {
+    font-size: 3.5rem;
+    color:var(--main-color);
+
+}
+#client .client-area img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+#client .carousel-indicators [data-bs-target]{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    width: 20px;
+    height: 5px;
+    border: 0;
+    transition: 0.5s all;
+}
+
+#client .carousel-indicators .active{
+    width: 30px;
+}
+
+/*  client */
+
+
+/* start of porto */
+
+#works .nav-pills .nav-link.active, #works .nav-pills .nav-link:hover{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+}
+
+#works .nav-pills .nav-link{
+    color: #000;
+}
+
+#works .layer{
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.5s 0.5s all;
+}
+#works .img-works:hover .layer{
+
+    opacity: 1;
+
+}
+
+#works .img-works img{
+transition: 0.5s all;
+}
+
+#works .img-works:hover img{
+    transform: scale(1.2);
+}
+
+#works .works-text {
+    top:150%;
+    transition: 0.5s 0.5s all;
+}
+
+#works .img-works:hover .works-text{
+    top:50%
+}
+/* end of porto */
+
+/* start of blog */
+
+#blog .blog-btn{
+    
+}
+
+/* end of blog */
+
+/* start of contact */
+#contact .item i {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+#contact textarea{
+    resize: none;
+    min-height: 120px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid var(--main-color);
+
+}
+#contact .contact-btn{
+    border: 0;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10pxs;
+}
+
+/* end of contact */
+
